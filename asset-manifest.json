@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/damianwebsite/static/css/main.5844fae4.css",
+    "main.js": "/damianwebsite/static/js/main.1b49dca4.js",
+    "static/media/darkcity.jpg": "/damianwebsite/static/media/darkcity.1e7fcf999b275b49ad2a.jpg",
+    "static/media/cool-city.jpg": "/damianwebsite/static/media/cool-city.7ab81ecd8234b0ada0b1.jpg",
+    "static/media/neon-city.jpg": "/damianwebsite/static/media/neon-city.bc845872d32bd15b6343.jpg",
+    "static/media/mindManagedApp.png": "/damianwebsite/static/media/mindManagedApp.c9ab0744cf2649d041fd.png",
+    "static/media/groupProjectVacationPlanner.png": "/damianwebsite/static/media/groupProjectVacationPlanner.66f9ae91ddf9ac0bd99b.png",
+    "static/media/resumeIcon.png": "/damianwebsite/static/media/resumeIcon.c1287ccd65c1f9f5f29c.png",
+    "static/media/dayPlannerApp.png": "/damianwebsite/static/media/dayPlannerApp.e4672399fdf5ea9ea9e4.png",
+    "static/media/profilePicCircle.jpeg": "/damianwebsite/static/media/profilePicCircle.4ad6009095b7ee96da7a.jpeg",
+    "static/media/Damian_Deleon_Resume.pdf": "/damianwebsite/static/media/Damian_Deleon_Resume.91fd60b5cb69a8598aa4.pdf",
+    "static/media/passwordGeneratorApp.png": "/damianwebsite/static/media/passwordGeneratorApp.274ea18db72b1fb8fa00.png",
+    "static/media/weatherDashboard.png": "/damianwebsite/static/media/weatherDashboard.04bae2a6c7996c8737b3.png",
+    "static/media/frienemies.png": "/damianwebsite/static/media/frienemies.0749d3625f2046125f3d.png",
+    "static/media/neoncar.jpeg": "/damianwebsite/static/media/neoncar.c9b59b9f3adff9df9498.jpeg",
+    "index.html": "/damianwebsite/index.html",
+    "main.5844fae4.css.map": "/damianwebsite/static/css/main.5844fae4.css.map",
+    "main.1b49dca4.js.map": "/damianwebsite/static/js/main.1b49dca4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5844fae4.css",
+    "static/js/main.1b49dca4.js"
+  ]
+}
