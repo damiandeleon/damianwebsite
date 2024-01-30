@@ -1,17 +1,16 @@
 import React from "react";
-import DamianResume from "../Assets/Damian_Deleon_Resume.pdf";
-import ResumeIcon from "../Assets/Images/resumeIcon.png";
+import DamianResume from "../Assets/Resume-Damian-DeLeon.pdf";
 
 function Navigation() {
   return (
     <>
       <nav className='navbar navbar-fixed-left'>
         <div className='container'>
-          <div className='navbar-header' style={{ fontSize: "10px" }}>
+          <div className='navbar-header'>
             <p
               style={{
                 color: "white",
-                fontSize: "20px",
+                fontSize: "14px",
                 textAlign: "center",
                 margin: "0px 0px 0px 0px",
               }}
@@ -24,22 +23,25 @@ function Navigation() {
               title='Home'
               href='#home'
             >
-              <i className='fas fa-home fa-2x grow hover'></i>
+              <i className='fas fa-home fa-2x grow hover' style={{color: 'whtie'}}></i>
             </a>
             <a className='nav-link' title='My Work' href='#projects'>
-              <i className='fas fa-th fa-2x grow hover'></i>
+              <i className='fas fa-th fa-2x grow hover'  style={{color: 'whtie'}}></i>
             </a>
             <a className='nav-link' title='About' href='#about'>
-              <i className='fas fa-user-astronaut fa-2x grow hover'></i>
+              <i className='fas fa-user-astronaut fa-2x grow hover' style={{color: 'whtie'}}></i>
+            </a>
+            <a className='nav-link' title='Music' href='#music'>
+              <i className='fas fa-music fa-2x grow hover' style={{color: 'whtie'}}></i>
             </a>
             <a className='nav-link' title='Contact Me' href='#contact'>
-              <i className='fas fa-envelope fa-2x grow hover'></i>
+              <i className='fas fa-envelope fa-2x grow hover' style={{color: 'whtie'}}></i>
             </a>
             <p></p>
             <p
               style={{
                 color: "white",
-                fontSize: "20px",
+                fontSize: "14px",
                 textAlign: "center",
                 margin: "0px 0px 0px 0px",
               }}
@@ -52,7 +54,7 @@ function Navigation() {
               target='blank'
               title='Linked In'
             >
-              <i className='fab fa-linkedin fa-2x grow hover'></i>
+              <i className='fab fa-linkedin fa-2x grow hover' style={{color: 'whtie'}}></i>
             </a>
 
             <a
@@ -61,7 +63,7 @@ function Navigation() {
               target='blank'
               title="Github"
             >
-              <i className='fab fa-github fa-2x grow hover'></i>
+              <i className='fab fa-github fa-2x grow hover' style={{color: 'whtie'}}></i>
             </a>
 
             <a
@@ -70,12 +72,12 @@ function Navigation() {
               target='blank'
               title='Resume Download'
             >
-              <img
-                className='grow hover'
-                src={ResumeIcon}
+              <i
+                className='fas fa-file-pdf fa-2x grow hover'
+                style={{color: 'whtie'}}
                 height='20px'
                 alt='resume icon'
-              ></img>
+              ></i>
             </a>
           </div>
         </div>

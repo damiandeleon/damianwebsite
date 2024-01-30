@@ -90,7 +90,7 @@ const ProjectList = () => {
       },
     ];
     return (
-        <Project details={projectDetails} />    
+        <Project projectDetails={projectDetails} />    
     )
 
 };

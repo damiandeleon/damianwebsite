@@ -5,7 +5,7 @@ function AboutMe() {
       <div 
       id='about'
       className='card-header card-background3 h1 pt-2 pb-2'
-      style={{height: '20vh'}}
+      style={{height: '0vh'}}
       >
         <h1 style={{color: "white", marginTop: '5%' }}>About Me</h1>
       </div>

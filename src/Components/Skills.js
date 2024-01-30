@@ -56,6 +56,21 @@ const Skills = () => {
                 </a>
               </div>
 
+              {/* Angular */}
+              <div>
+                <a
+                  href='https://angular.dev/'
+                  target='_blank'
+                  rel='noreferrer'
+                  style={{ textDecoration: "none" }}
+                >
+                  <div>
+                    <i className='fab fa-brands fa-angular fa-lg mt-2 grow hover'></i>
+                    <p className='iconLabel'>Angular</p>
+                  </div>
+                </a>
+              </div>
+
               {/* HTML */}
               <div>
                 <a

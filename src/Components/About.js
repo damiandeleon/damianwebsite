@@ -3,10 +3,7 @@ import profilePic from "../Assets/Images/profilePicCircle.jpeg";
 
 function About() {
   return (
-    <div
-      className='row card-background3'
-      style={{ height: "135vh" }}
-    >
+    <div className="row card-background3">
       <div>
         <div
           // className='card-body ms-5 me-5'
@@ -14,43 +11,62 @@ function About() {
         >
           <img
             src={profilePic}
-            className='profilePic'
-            alt='project screenshot'
-            width='175px'
+            className="profilePic"
+            alt="project screenshot"
+            width="175px"
             style={{ borderRadius: "100px" }}
           />
           <article>
-            <div className='profiledescription'>
+            <div className="profiledescription">
               <h2>Summary</h2>
               <p>
-                Full Stack Web Developer with a Bachelors in Business and over
-                20 years of experience in the Buseiness Services Industry
-                working for companies like IBM, Facebook, Apple, and General
-                Motors.
+                Experienced Full Stack Web Developer | Tech Enthusiast |
+                Transformation Expert
               </p>
             </div>
             <hr />
           </article>
           <article>
-            <div className='profiledescription' style={{ height: "100%" }}>
+            <div className="profiledescription" style={{ height: "100%", width: "65%", margin: "auto"}}>
               <h2>Why Web Development?</h2>
               <p>
-                I chose after 23 years in the business services industry to
-                change careers. I wanted to challenge myself and be a part of
-                the tech industry as it grows and becomes more integrated in our
-                daily lives.
-                <br></br>I have a lifelong passion for figuring out how things
-                work, and fixing things; be it from learning about physiology
-                and fitness, to tearing down and building my first comptuer. My
-                career has been built on taking what clients wanted for their
-                businesses and making it happen. I used various skills such as
-                project managmeent, process mangement, technical writing,
-                operations management, and quality management to be successful.
-                When I discovered coding, I found that those skills tranfsered
-                perfectly into the DevOps and the Agile development concepts. I
-                found a passion in coding and its ability to impact society and
-                businesses. I never stop coding and I'm excited to tackle what's
-                next.
+                Are you ready to bring a seasoned Full Stack Web Developer into
+                your team? With over two decades of experience in the Business
+                Services Industry, including stints at industry giants like IBM,
+                Facebook, Apple, and General Motors, I bring a unique blend of
+                skills and a fresh perspective to the tech world.
+              </p>
+              <p>
+                After thriving in the business services sector for 23 years, I
+                decided to embark on a new journey. My motivation was simple:
+                the ever-evolving tech industry, with its profound impact on our
+                daily lives, beckoned me to join its ranks. I've always been
+                driven by an insatiable curiosity for understanding how things
+                work and a knack for problem-solving – whether it's delving into
+                physiology and fitness or building my first computer from
+                scratch.
+              </p>
+              <p>
+                Throughout my career, I've excelled at translating client
+                visions into reality, employing a versatile skill set that
+                encompasses project management, process optimization, technical
+                writing, operations oversight, and quality control. When I
+                ventured into coding, I was pleasantly surprised to discover
+                that my proficiency in these areas seamlessly translated into
+                the world of DevOps and Agile development.
+              </p>
+              <p>
+                Coding quickly became my newfound passion, not only for its
+                technical challenges but also for its potential to revolutionize
+                society and businesses alike. I am dedicated to continuous
+                learning and growth, and I'm eagerly looking forward to the next
+                exciting coding adventure.
+              </p>
+              <p>
+                If you're seeking a seasoned Full Stack Web Developer with a
+                fresh perspective and a relentless commitment to excellence,
+                let's connect and explore the possibilities together. Your next
+                breakthrough awaits.
               </p>
             </div>
           </article>

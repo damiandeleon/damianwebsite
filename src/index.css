@@ -10,42 +10,7 @@
 }
 
 .bgimg-1 {
-  /* background-color: rgb(52, 52, 52);
-  background: -moz-linear-gradient(
-    90deg,
-    rgba(52, 52, 52, 1) 0%,
-    rgba(109, 140, 185, 1) 27%,
-    rgba(1, 3, 80, 1) 46%,
-    rgba(166, 193, 177, 1) 71%,
-    rgba(166, 167, 193, 1) 85%,
-    rgba(249, 249, 249, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    90deg,
-    rgba(52, 52, 52, 1) 0%,
-    rgba(109, 140, 185, 1) 27%,
-    rgba(1, 3, 80, 1) 46%,
-    rgba(166, 193, 177, 1) 71%,
-    rgba(166, 167, 193, 1) 85%,
-    rgba(249, 249, 249, 1) 100%
-  );
-  background: linear-gradient(
-    90deg,
-    rgba(52, 52, 52, 1) 0%,
-    rgba(109, 140, 185, 1) 27%,
-    rgba(1, 3, 80, 1) 46%,
-    rgba(166, 193, 177, 1) 71%,
-    rgba(166, 167, 193, 1) 85%,
-    rgba(249, 249, 249, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#343434",endColorstr="#f9f9f9",GradientType=1);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-width: 100%;
-  min-height: 100%; */
-  background-image: url("https://thumbs.gfycat.com/HomelyBewitchedItaliangreyhound.webp");
+  background-image: url("./Assets/Images/transcodebackground.png");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -122,6 +87,19 @@ body {
   background-size: cover;
   max-height: 100%;
 }
+.card-background4 {
+  font-family: "Roboto", sans-serif;
+  font-size: large;
+  opacity: 1;
+  color: lightgray;
+  text-align: left;
+  background-image: url("./Assets/Images/dreamstomusic.webp");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 100%;
+}
 .card-btn {
   padding: 0.7 em 2 em;
   background: radial-gradient(hsl(219, 86%, 46%), rgba(97, 9, 168, 0.3));
@@ -170,8 +148,12 @@ body {
 .displayBackground {
   text-align: center;
   color: white;
-  background-color: rgba(138, 138, 138, 0.315);
-  /* border-radius: 75px; */
+  font-family: "Roboto", sans-serif;
+  color: white;
+  margin: 10px;
+  padding-right: 30px;
+  border: dodgerblue 2px solid;
+  background-color: rgba(2, 2, 2, 0.60);
 }
 
 #footer {
@@ -213,8 +195,8 @@ flood-color: beige;
   width: 100%;
   color: rgb(255, 158, 47);
   font-size: 40px;
-  font-family: "Roboto", sans-serif;
-  font-weight: bolder;
+  font-family: "Serif";
+  font-weight: normal;
   /* background-color: rgba(0, 0, 0, 0.80); */
   background-image: url(https://thumbs.gfycat.com/FailingAcidicArmadillo.webp);
   background-size: cover;
@@ -224,13 +206,28 @@ flood-color: beige;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  padding-top: 15px;
+  padding-top: px;
 }
 
 #logo {
   height: auto;
   width: auto;
   overflow: hidden;
+}
+
+#musicSteamDiv{
+  background-image: url("../src/Assets/Images/coralSmoke.png");
+  background-color: bisque;
+  background-size: cover;
+  background-position: center;
+  color: black;
+  font-weight: bold;
+}
+
+.navbar-header{
+  font-size: 9px;
+  border: dodgerblue solid 3px;
+  background-color: rgba(43, 84, 138, 0.767);
 }
 
 .neonCity {
@@ -245,6 +242,14 @@ flood-color: beige;
   background-color: black;
 }
 
+#playerCard{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 15px;
+  border-top: 5px black solid;
+  border-bottom: 5px black solid;
+}
+
 .portfolioPad {
   position: relative;
   text-align: center;
@@ -256,7 +261,7 @@ flood-color: beige;
   color: white;
   margin: 10px;
   padding-right: 30px;
-
+  border: dodgerblue 2px solid;
   background-color: rgba(2, 2, 2, 0.60);
   border-bottom-right-radius: 75px;
   border-top-right-radius: 75px;

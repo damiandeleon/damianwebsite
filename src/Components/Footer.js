@@ -4,7 +4,7 @@ function Footer() {
   return (
     <div>
       <div id='footer'>
-        <p>Designed by Damian Deleon©</p>
+        <p>Designed using React by Damian Deleon©</p>
       </div>
     </div>
   );

@@ -6,6 +6,7 @@ import About from "./About";
 import Skills from "./Skills";
 import AboutMe from "./AboutMe";
 import Footer from "./Footer";
+import MusicList from "./MusicList";
 
 function Wrapper() {
   return (
@@ -15,6 +16,7 @@ function Wrapper() {
       <Skills />
       <AboutMe />
       <About />
+      <MusicList />
       <Contact />
       <Footer />
     </>

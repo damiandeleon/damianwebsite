@@ -1,6 +1,8 @@
 import React from "react";
 
 const Project = (props) => {
+  const projectDetails = props.projectDetails;
+  // console.log(projectDetails);
   return (
     <div id='projects'>
       <div className='bgimg-1'>
@@ -15,7 +17,7 @@ const Project = (props) => {
           <div className='portfolioPad'>
             <div className='CardPadPortfolio'>
               <div className='card-group colBackground justify-content-center margin-auto'>
-                {props.details.map((project) => {
+                {projectDetails.map((project) => {
                   return (
                     <div key={project.id}>
                       <div
