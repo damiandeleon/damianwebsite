@@ -5,6 +5,7 @@ import Resume from "./Resume";
 function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
   // Handle scroll effect for navbar background
   useEffect(() => {
@@ -15,6 +16,22 @@ function Navigation() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  // Handle window resize for responsive behavior
+  useEffect(() => {
+    const handleResize = () => {
+      const mobile = window.innerWidth <= 768;
+      setIsMobile(mobile);
+
+      // Close mobile menu when switching to desktop
+      if (!mobile && isMenuOpen) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [isMenuOpen]);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -140,7 +157,7 @@ function Navigation() {
             : "0 2px 10px rgba(0, 0, 0, 0.05)",
           transition: "all 0.3s ease",
           zIndex: 1000,
-          padding: "0 20px",
+          // padding: "0 20px",
         }}
       >
         <div
@@ -150,7 +167,7 @@ function Navigation() {
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
-            height: "70px",
+            height: "50px",
           }}
         >
           {/* Logo/Brand */}
@@ -180,7 +197,7 @@ function Navigation() {
             {/* Navigation Links - Hidden on mobile */}
             <div
               style={{
-                display: window.innerWidth <= 768 ? "none" : "flex",
+                display: isMobile ? "none" : "flex",
                 alignItems: "center",
                 gap: "30px",
               }}
@@ -223,7 +240,7 @@ function Navigation() {
             {/* Social Links & Resume - Hidden on mobile */}
             <div
               style={{
-                display: window.innerWidth <= 768 ? "none" : "flex",
+                display: isMobile ? "none" : "flex",
                 alignItems: "center",
                 gap: "15px",
                 paddingLeft: "20px",
@@ -307,7 +324,7 @@ function Navigation() {
             <button
               onClick={toggleMenu}
               style={{
-                display: window.innerWidth <= 768 ? "flex" : "none",
+                display: isMobile ? "flex" : "none",
                 flexDirection: "column",
                 justifyContent: "center",
                 alignItems: "center",
@@ -374,7 +391,7 @@ function Navigation() {
             visibility: isMenuOpen ? "visible" : "hidden",
             transition: "all 0.3s ease",
             padding: "20px",
-            display: window.innerWidth <= 768 ? "block" : "none",
+            display: isMobile ? "block" : "none",
           }}
         >
           <div

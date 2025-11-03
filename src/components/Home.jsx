@@ -8,7 +8,7 @@ function Home() {
         id="main"
         className="row neonCity"
         style={{
-          height: "100vh",
+          height: "99vh",
           width: "100vw",
           marginTop: "0",
           marginLeft: "0",

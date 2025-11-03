@@ -43,6 +43,7 @@ body {
 }
 
 .App {
+  max-height: 100vh;
   width: 100%;
   max-width: 100vw;
   overflow-x: hidden;
@@ -347,13 +348,13 @@ body {
 
 .neonCity {
   background-image: url("./assets/Images/neon-city.jpg");
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   min-height: 100%;
-  opacity: 0.9;
+  /* opacity: 0.9; */
   background-color: black;
 }
 

@@ -10,8 +10,8 @@ function Wrapper() {
     <>
       <div id="home"></div>
       <Home />
-      <ProjectList />
       <About />
+      <ProjectList />
       <Contact />
       <Footer />
     </>
