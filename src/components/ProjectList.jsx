@@ -14,10 +14,10 @@ const ProjectList = () => {
       name: "Mind Managed Application",
       img: projectMM,
       techStack:
-        "HTML, CSS3, Bootstrap, HTML, Javascript, MongoDB, Express, Axios, ReactJS, Node.js, openFDA API, Recharts, Auth0",
-      gitHubURL: "https://github.com/damiandeleon/project-3-group-8",
+        "HTML, CSS3, Bootstrap, HTML, Javascript, MongoDB, Express, Axios, ReactJS, Node.js, openFDA API, ChartJS, Auth0",
+      gitHubURL: "https://github.com/damiandeleon/mindManaged2",
       gitHubTitle: "GitHub Repository",
-      deployURL: "https://obscure-beyond-60909.herokuapp.com/",
+      deployURL: "https://main.d31c0nb3swsj84.amplifyapp.com/",
       deployTitle: "Deployed Project",
       description:
         "Mental Health / mood monitoring app.  Using Axios to send HTTP requests to REST endpoints and perform CRUD operations, so user can journal and track medications.  The app also uses the openFDA API to search for medications. ",
