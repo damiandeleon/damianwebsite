@@ -5,16 +5,24 @@ const Project = (props) => {
   // console.log(projectDetails);
   return (
     <div
+      className="Outer"
       id="projects"
       style={{
         boxSizing: "border-box",
+        paddingTop: "70px",
       }}
     >
       <div className="bgimg-1">
         <div>
-          <div className="card-header  pt-2 pb-2" style={{ color: "white" }}>
-            <h1 style={{ paddingTop: "70px" }}>My Work</h1>
-            <p>Here are some of my latest projects</p>
+          <div
+            className="card-header  pt-2 pb-2"
+            style={{
+              color: "rgb(236, 88, 0)",
+              fontFamily: "Roboto",
+            }}
+          >
+            <h2>My Work</h2>
+            <p>Hover over any project to learn more!</p>
           </div>
         </div>
 
@@ -23,60 +31,52 @@ const Project = (props) => {
             <div className="CardPadPortfolio">
               <div className="card-group colBackground justify-content-center margin-auto">
                 {projectDetails.map((project) => {
+                  const techStack = Array.isArray(project.techStack)
+                    ? project.techStack
+                    : typeof project.techStack === "string"
+                      ? project.techStack
+                          .split(",")
+                          .map((tech) => tech.trim())
+                          .filter(Boolean)
+                      : [];
+
                   return (
                     <div key={project.id}>
-                      <div
-                        className="card hover"
-                        style={{
-                          border: "3px white solid",
-                          perspective: "272px",
-                          // border: "CornflowerBlue 5px solid",
-                          borderRadius: "10px",
-                          margin: "50px",
-                          transition: "all .25s ease-in-out",
-                          boxShadow: "0 1.5rem 3rem rgb(0 0 0 / 100%)",
-                          color: "white",
-                          fontWeight: "bold",
-                          fontFamily: "Roboto",
-                          background:
-                            "linear-gradient(0deg, rgba(52,52,52,1) 0%, rgba(102,102,102,1) 58%, rgba(171,171,171,1) 100%)",
-                          maxWidth: "400px",
-                        }}
-                      >
+                      <div className="card hover project-card">
                         <div id={"logo"}>
                           <img
                             src={project.img}
-                            className="card-img-top"
+                            className="card-img-top project-card__image"
                             alt="project screenshot"
                           />
                         </div>
-                        <p className="card-font">{project.name}</p>
-                        <div>
-                          <p
-                            style={{
-                              fontSize: "11px",
-                              paddingLeft: "40px",
-                              paddingRight: "40px",
-                            }}
-                          >
-                            {project.techStack}
+                        <div className="project-card__overlay">
+                          <p className="card-font">{project.name}</p>
+                          <ul className="project-card__stack">
+                            {techStack.map((tech, index) => {
+                              return (
+                                <li key={`${project.id}-${tech}-${index}`}>
+                                  {tech}
+                                </li>
+                              );
+                            })}
+                          </ul>
+                          <p className="project-card__description">
+                            {project.description}
                           </p>
-                        </div>
-                        <div
-                          style={{
-                            paddingLeft: "40px",
-                            paddingRight: "40px",
-                            fontSize: "12px",
-                          }}
-                        >
-                          <p>{project.description}</p>
-                        </div>
-                        <div>
-                          <div>
-                            <a href={project.deployURL} target="blank">
-                              <p className="card-btn2 fa fa-2x">Demo</p>
+                          <div className="project-card__actions">
+                            <a
+                              href={project.deployURL}
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              <span className="card-btn2 fa fa-2x">Demo</span>
                             </a>
-                            <a href={project.gitHubURL} target="blank">
+                            <a
+                              href={project.gitHubURL}
+                              target="_blank"
+                              rel="noreferrer"
+                            >
                               <i className="fa fa-github fa-2x card-btn" />
                             </a>
                           </div>

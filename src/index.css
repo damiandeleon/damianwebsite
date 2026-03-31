@@ -50,6 +50,11 @@ body {
   position: relative;
 }
 
+.Outer {
+  margin-left: 150px;
+  margin-right: 150px;
+  overflow-x: hidden;
+}
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
@@ -99,7 +104,8 @@ button:focus-visible {
 }
 
 .bgimg-1 {
-  background-image: url("./assets/Images/transcodebackground.png");
+  /* background-image: url("./assets/Images/transcodebackground.png"); */
+  background-color: whitesmoke;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -143,10 +149,11 @@ body {
 }
 
 .card-font {
-  padding-top: 30px;
+  padding-top: 0;
+  margin-bottom: 0.75rem;
   font-size: x-large;
-  color: "white";
-  font-family: "Roboto", sans-serif;
+  color: white;
+  font-family: karla, sans-serif;
 }
 
 .card-background {
@@ -169,7 +176,8 @@ body {
   opacity: 1;
   color: lightgray;
   text-align: left;
-  background-image: url("./Assets/Images/neoncar.jpeg");
+  /* background-image: url("./Assets/Images/neoncar.jpeg"); */
+  background-color: whitesmoke;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -182,7 +190,8 @@ body {
   opacity: 1;
   color: lightgray;
   text-align: left;
-  background-image: url("./Assets/Images/dreamstomusic.webp");
+  /* background-image: url("./Assets/Images/dreamstomusic.webp"); */
+  background-color: whitesmoke;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -214,18 +223,89 @@ body {
   padding-bottom: 0.05rem;
 }
 
-.card:hover {
-  transform: rotateX(7deg) rotateY(0deg);
-  transform-style: preserve-3d;
+.project-card {
+  position: relative;
+  border: 3px white solid;
+  border-radius: 10px;
+  margin: 50px;
+  width: 400px; /* fixed width instead of max-width */
+  height: 400px; /* fixed height — adjust to taste */
+  overflow: hidden;
+  box-shadow: 0 1.5rem 3rem rgb(0 0 0 / 100%);
+  color: white;
+  font-weight: bold;
+  font-family: karla, sans-serif;
+}
+
+.project-card__image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.project-card__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgb(0 0 0 / 85%);
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.25s ease-in-out,
+    visibility 0.25s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem 1.5rem;
+}
+
+.project-card:hover .project-card__overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.project-card__stack {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  list-style: none;
+  margin: 0 0 0.75rem;
+  padding-left: 1.25rem;
+  text-align: left;
+}
+
+.project-card__stack li {
+  color: black;
+  font-size: 0.8rem;
+  font-weight: lighter;
+  margin: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 10px;
+  background-color: antiquewhite;
+}
+
+.project-card__description {
+  font-size: 12px;
+  margin-bottom: 1rem;
+}
+
+.project-card__actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card-header {
-  text-align: center;
+  text-align: left;
   border-bottom: 0;
 }
 
 .card-img-top {
-  max-width: 300px;
+  width: 100%;
+  max-width: 400px;
 }
 
 .contactPad {
@@ -237,11 +317,11 @@ body {
   text-align: center;
   color: white;
   font-family: "Roboto", sans-serif;
-  color: white;
   margin: 10px;
   padding-right: 30px;
-  border: dodgerblue 2px solid;
-  background-color: rgba(2, 2, 2, 0.6);
+  /* border: dodgerblue 2px solid; */
+  border-radius: 25px;
+  background-color: rgba(82, 54, 38, 0.6);
 }
 
 #footer {
@@ -269,7 +349,7 @@ body {
 }
 
 .iconLabel {
-  font-family: "Roboto", sans-serif;
+  font-family: "Nanum Pen Script", cursive;
   text-decoration-line: none;
   color: white;
   position: relative;
@@ -286,7 +366,12 @@ body {
   font-size: 40px;
 
   /* Enhanced Typography */
-  font-family: "Inter", "Segoe UI", "Roboto", -apple-system, BlinkMacSystemFont,
+  font-family:
+    "Inter",
+    "Segoe UI",
+    "Roboto",
+    -apple-system,
+    BlinkMacSystemFont,
     sans-serif;
   font-weight: 700;
   font-display: swap;
@@ -294,7 +379,9 @@ body {
   line-height: 1.2;
 
   /* Text Effects for Polish */
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3), 0 4px 8px rgba(0, 0, 0, 0.2),
+  text-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.3),
+    0 4px 8px rgba(0, 0, 0, 0.2),
     0 8px 16px rgba(0, 0, 0, 0.1);
 
   /* Subtle text stroke for definition */
@@ -347,7 +434,7 @@ body {
 }
 
 .neonCity {
-  background-image: url("./assets/Images/neon-city.jpg");
+  /* background-image: url("./assets/Images/neon-city.jpg"); */
   /* background-attachment: fixed; */
   background-position: center;
   background-repeat: no-repeat;
@@ -355,7 +442,7 @@ body {
   width: 100%;
   min-height: 100%;
   /* opacity: 0.9; */
-  background-color: black;
+  background-color: whitesmoke;
 }
 
 #playerCard {
@@ -374,11 +461,11 @@ body {
 .profiledescription {
   font-family: "Roboto", sans-serif;
   text-indent: 2rem;
-  color: white;
+  color: #696969;
   margin: 10px;
   padding-right: 30px;
-  border: dodgerblue 2px solid;
-  background-color: rgba(2, 2, 2, 0.6);
+  /* border: dodgerblue 2px solid;
+  background-color: rgba(2, 2, 2, 0.6); */
   border-bottom-right-radius: 75px;
   border-top-right-radius: 75px;
 }
@@ -443,7 +530,8 @@ svg {
 }
 
 .yellowBG {
-  background-image: url("./Assets//Images/darkcity.jpg");
+  /* background-image: url("./Assets//Images/darkcity.jpg"); */
+  background-color: whitesmoke;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -521,17 +609,22 @@ svg {
 @keyframes textGlow {
   0%,
   100% {
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3), 0 4px 8px rgba(0, 0, 0, 0.2),
+    text-shadow:
+      0 2px 4px rgba(0, 0, 0, 0.3),
+      0 4px 8px rgba(0, 0, 0, 0.2),
       0 8px 16px rgba(0, 0, 0, 0.1);
   }
   50% {
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3), 0 4px 8px rgba(0, 0, 0, 0.2),
-      0 8px 16px rgba(0, 0, 0, 0.1), 0 0 20px rgba(255, 255, 255, 0.3);
+    text-shadow:
+      0 2px 4px rgba(0, 0, 0, 0.3),
+      0 4px 8px rgba(0, 0, 0, 0.2),
+      0 8px 16px rgba(0, 0, 0, 0.1),
+      0 0 20px rgba(255, 255, 255, 0.3);
   }
 }
 
 /* Typography Enhancement Classes */
-.introCard h1 {
+/* .introCard h1 {
   font-family: "Inter", "Segoe UI", "Roboto", sans-serif;
   font-weight: 800;
   font-size: clamp(2rem, 5vw, 4rem);
@@ -543,7 +636,7 @@ svg {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textGlow 3s ease-in-out infinite;
-}
+} */
 
 .introCard p {
   font-family: "Inter", "Segoe UI", "Roboto", sans-serif;
@@ -559,9 +652,8 @@ svg {
 /* Enhanced readability and polish */
 .introCard .subtitle {
   font-weight: 400;
-  font-size: clamp(0.9rem, 2vw, 1.2rem);
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
   letter-spacing: 0.05em;
-  text-transform: uppercase;
   opacity: 0.9;
   margin-top: 1rem;
 }

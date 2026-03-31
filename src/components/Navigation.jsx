@@ -53,7 +53,7 @@ function Navigation() {
     const newWindow = window.open(
       "",
       "_blank",
-      "width=800,height=600,scrollbars=yes,resizable=yes"
+      "width=800,height=600,scrollbars=yes,resizable=yes",
     );
     if (newWindow) {
       newWindow.document.write(`
@@ -119,8 +119,9 @@ function Navigation() {
 
   const navItems = [
     { id: "home", label: "Home", icon: "fas fa-home" },
-    { id: "about", label: "About", icon: "fas fa-user-astronaut" },
+    { id: "toolkit", label: "Tookkit", icon: "fas fa-pen-clip" },
     { id: "projects", label: "Projects", icon: "fas fa-th" },
+    { id: "about", label: "About", icon: "fas fa-user-astronaut" },
     { id: "contact", label: "Contact", icon: "fas fa-envelope" },
   ];
 

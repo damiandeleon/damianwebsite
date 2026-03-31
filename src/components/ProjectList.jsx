@@ -3,7 +3,8 @@ import projectVP from "../Assets/Images/groupProjectVacationPlanner.png";
 import projectDP from "../Assets/Images/dayPlannerApp.png";
 import projectPG from "../Assets/Images/passwordGeneratorApp.png";
 import projectWD from "../Assets/Images/weatherDashboard.png";
-import projectMM from "../Assets/Images/mindManagedApp.png";
+// import projectMM from "../Assets/Images/mindManagedApp.png";
+import projectMM from "../Assets/Images/tabbyBlink.gif";
 import projectFR from "../Assets/Images/frienemies.png";
 import Project from "./Project";
 
@@ -13,14 +14,27 @@ const ProjectList = () => {
       id: 1,
       name: "Mind Managed Application",
       img: projectMM,
-      techStack:
-        "HTML, CSS3, Bootstrap, HTML, Javascript, MongoDB, Express, Axios, ReactJS, Node.js, openFDA API, ChartJS, Auth0",
+      techStack: [
+        "HTML",
+        "CSS3",
+        "Bootstrap",
+        "HTML",
+        "Javascript",
+        "MongoDB",
+        "Express",
+        "Axios",
+        "ReactJS",
+        "Node.js",
+        "openFDA API",
+        "ChartJS",
+        "Auth0",
+      ],
       gitHubURL: "https://github.com/damiandeleon/mindManaged2",
       gitHubTitle: "GitHub Repository",
       deployURL: "https://main.d31c0nb3swsj84.amplifyapp.com/",
       deployTitle: "Deployed Project",
       description:
-        "Mental Health / mood monitoring app.  Using Axios to send HTTP requests to REST endpoints and perform CRUD operations, so user can journal and track medications.  The app also uses the openFDA API to search for medications. ",
+        "Mental Health / mood monitoring app.  Using Axios to perform CRUD operations, so user can journal and track medications.  The app also uses the openFDA API to search for medications. ",
     },
     // {
     //   id: 2,
@@ -51,8 +65,14 @@ const ProjectList = () => {
       id: 4,
       name: "Day Planner Application",
       img: projectDP,
-      techStack:
-        "HTML, CSS, Javascript, Google Fonts, Awesome Fonts, JQuery, MomentJS API, local storage",
+      techStack: [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "JQuery",
+        "MomentJS",
+        "local storage",
+      ],
       gitHubURL: "https://github.com/damiandeleon/work-day-scheduler",
       gitHubTitle: "GitHub Repository",
       deployURL: "https://damiandeleon.github.io/work-day-scheduler/",
@@ -64,7 +84,7 @@ const ProjectList = () => {
       id: 5,
       name: "Password Generator Application",
       img: projectPG,
-      techStack: "HTML, CSS, Javascript",
+      techStack: ["HTML", "CSS", "Javascript"],
       gitHubURL: "https://github.com/damiandeleon/Password-Generator",
       gitHubTitle: "GitHub Repository",
       deployURL: "https://damiandeleon.github.io/Password-Generator/",
@@ -76,7 +96,13 @@ const ProjectList = () => {
       id: 6,
       name: "Weather Dashboard",
       img: projectWD,
-      techStack: "HTML, CSS, Javascript, local storage, Open Weather API",
+      techStack: [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "local storage",
+        "Open Weather API",
+      ],
       gitHubURL: "https://github.com/damiandeleon/Weather-Dashboard/",
       gitHubTitle: "GitHub Repository",
       deployURL: "https://damiandeleon.github.io/Weather-Dashboard/",

@@ -4,14 +4,16 @@ import Contact from "./Contact";
 import ProjectList from "./ProjectList";
 import About from "./About";
 import Footer from "./Footer";
+import Skills from "./Skills";
 
 function Wrapper() {
   return (
     <>
       <div id="home"></div>
       <Home />
-      <About />
+      <Skills />
       <ProjectList />
+      <About />
       <Contact />
       <Footer />
     </>

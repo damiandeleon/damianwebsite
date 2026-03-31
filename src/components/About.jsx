@@ -1,15 +1,16 @@
 import React from "react";
 import profilePic from "../Assets/Images/profilePicCircle.jpeg";
-import Skills from "./Skills";
+import profile from "../Assets/Images/profilepic.jpg";
 
 function About() {
   return (
     <div
       id="about"
-      className="row card-background3"
+      className="row Outer"
       style={{
-        paddingTop: "70px",
+        paddingTop: "140px",
         boxSizing: "border-box",
+        paddingBottom: "140px",
       }}
     >
       <div>
@@ -17,71 +18,57 @@ function About() {
           // className='card-body ms-5 me-5'
           style={{ textAlign: "center" }}
         >
-          <img
-            src={profilePic}
-            className="profilePic"
-            alt="project screenshot"
-            width="175px"
-            style={{ borderRadius: "100px" }}
-          />
           <article>
-            <div className="profiledescription">
-              <h2>Summary</h2>
-              <p>
-                Experienced Full Stack Web Developer | Tech Enthusiast |
-                Transformation Expert
-              </p>
-            </div>
-            <hr />
-            <Skills></Skills>
-          </article>
-          <article>
-            <div
-              className="profiledescription"
-              style={{ height: "100%", width: "65%", margin: "auto" }}
-            >
-              <p>
-                I am a Full Stack Developer with 20+ years of experience in
-                business services, including work with IBM, Facebook, Apple, and
-                GM. After leading cross-functional teams and optimizing
-                operations across Fortune 500s, I transitioned into tech to
-                build scalable, user-focused web applications. My background in
-                project management and process design gives me a unique edge in
-                DevOps and Agile environments — and I have applied those skills
-                to deliver real results in modern development stacks.
-              </p>
-              <p>
-                After 23 years of success in the business services sector, I
-                transitioned into full stack web development to apply my
-                problem-solving mindset and technical acumen to modern software
-                engineering. My passion for technology began early—building my
-                first computer from scratch—and evolved into a deep commitment
-                to creating scalable, user-centric applications that drive
-                business value.
-              </p>
-              <p>
-                I bring a cross-functional background in project management,
-                process optimization, technical documentation, and quality
-                assurance, which seamlessly complements my proficiency in Agile
-                methodologies, DevOps practices, and full stack development. My
-                experience includes building responsive web applications using
-                JavaScript, React, Node.js, Express, and MongoDB, as well as
-                integrating RESTful APIs, managing CI/CD pipelines, and
-                deploying to AWS and Azure environments.
-              </p>
-              <p>
-                My ability to translate complex client requirements into
-                functional, maintainable code has been honed through years of
-                stakeholder collaboration and operational leadership. I thrive
-                in fast-paced environments where continuous learning, clean
-                architecture, and performance optimization are key.
-              </p>
-              <p>
-                If you're looking for a Full Stack Developer who combines
-                enterprise-level experience with hands-on coding expertise and a
-                growth-oriented mindset, I’d love to connect and explore how I
-                can contribute to your team’s success.
-              </p>
+            <div>
+              <div
+                className="card-header  pt-2 pb-2"
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "space-around",
+                  fontFamily: "karla",
+                  color: "#696969",
+                }}
+              >
+                <div>
+                  <h2 style={{ color: "rgb(236, 88, 0)" }}>About Me 🫶🏼</h2>
+                  <p>
+                    Full Stack Web Developer with a bachelor’s in business and
+                    over 20 years of experience working for companies like IBM,
+                    Facebook, Apple, and General Motors. Recognized and endorsed
+                    by former colleagues in Vendor Management and Business
+                    Performance Management. Earned certificates from the
+                    University of Texas in Austin Coding Boot Camp and SMU,
+                    focusing on Java and React Native. I am skilled in HTML,
+                    CSS, Bootstrap, and React.js, with a passion for continuous
+                    learning. Efficient, strategic thinker with adaptability to
+                    changing conditions. Dedicated to building websites and apps
+                    that provide practical services to people and businesses.
+                    Seeking to join a fast-paced, quality-driven team to make a
+                    positive impact
+                  </p>
+                  <p>
+                    I bring a cross-functional background in project management,
+                    process optimization, technical documentation, and quality
+                    assurance, which seamlessly complements my proficiency in
+                    Agile methodologies, DevOps practices, and full stack
+                    development. My experience includes building responsive
+                    applications using a suite of program languages.
+                  </p>
+                </div>
+                <div>
+                  <img
+                    src={profile}
+                    style={{
+                      maxWidth: "18.0rem",
+                      borderRadius: "15%",
+                      marginTop: "20px",
+                      marginLeft: "50px",
+                    }}
+                    alt="down arrow"
+                  />
+                </div>
+              </div>
             </div>
           </article>
         </div>

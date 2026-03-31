@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../index.css";
+import image from "../Assets/Images/cartoon-portrait.png";
 
 function Home() {
   return (
@@ -24,14 +25,47 @@ function Home() {
             <div
               className="introCard text-center fade-in"
               style={{
-                backgroundColor: "rgba(128, 128, 128, 0.8)",
-                fontSize: "29px",
+                backgroundColor: "rgba(241, 236, 228, 0.6)",
+                color: "rgb(236, 88, 0)",
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "space-evenly",
               }}
             >
-              <p>HELLO, I'M DAMIAN DELEON.</p>
-              <p style={{ fontSize: "20px" }}>FULL STACK WEB DEVELOPER </p>
+              <div>
+                <h2>Hi! I'm Damian Deleon. 👋🏼</h2>
+                <p style={{ color: "#696969" }} className="subtitle">
+                  Multi disciplinary{" "}
+                  <span style={{ color: "rgb(236,88,0)" }}>developer </span>{" "}
+                  with a passion for making life easier for people through
+                  technology.
+                </p>
+              </div>
+              <div>
+                <img
+                  src={image}
+                  style={{ maxWidth: "150px" }}
+                  alt="image of a cartoon portrait of the developer"
+                />
+              </div>
             </div>
           </div>
+        </div>
+        <div
+          style={{
+            position: "absolute",
+            textAlign: "center",
+            bottom: "20px",
+            left: "50%",
+            transform: "translateX(-50%)",
+            zIndex: 3,
+          }}
+        >
+          <i
+            className="fa-solid fa-angles-down"
+            style={{ color: "rgb(236, 88, 0)", fontSize: "1.8rem" }}
+            aria-hidden="true"
+          />
         </div>
       </div>
     </>
