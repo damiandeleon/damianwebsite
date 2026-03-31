@@ -51,8 +51,8 @@ body {
 }
 
 .Outer {
-  margin-left: 150px;
-  margin-right: 150px;
+  margin-left: 300px;
+  margin-right: 300px;
   overflow-x: hidden;
 }
 h1 {
@@ -158,7 +158,8 @@ body {
 
 .card-background {
   opacity: 1;
-  color: lightgray;
+  color: #696969;
+  font-family: karla, sans-serif;
   font-size: 15px;
   text-align: left;
 }
@@ -532,14 +533,14 @@ svg {
 .yellowBG {
   /* background-image: url("./Assets//Images/darkcity.jpg"); */
   background-color: whitesmoke;
-  background-attachment: fixed;
+  /* background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
+  color: rgb(105, 105, 105);
   width: 100%;
   min-height: 100%;
   opacity: 0.9;
-  background-color: black;
 }
 
 .fade-in {

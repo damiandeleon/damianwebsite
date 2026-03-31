@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { createRoot } from "react-dom/client";
-import Resume from "./Resume";
+import resumePdf from "../assets/Resume.pdf";
 
 function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -49,72 +48,14 @@ function Navigation() {
     }
   };
 
-  const openResumeInNewWindow = () => {
-    const newWindow = window.open(
-      "",
-      "_blank",
-      "width=800,height=600,scrollbars=yes,resizable=yes",
-    );
-    if (newWindow) {
-      newWindow.document.write(`
-        <!DOCTYPE html>
-        <html>
-          <head>
-            <title>Damian's Resume</title>
-            <meta charset="UTF-8" />
-            <style>
-              body {
-                font-family: Arial, sans-serif;
-                margin: 40px;
-                background-color: #f9f9f9;
-                color: #333;
-              }
-              h1, h2, h3 {
-                color: #2c3e50;
-              }
-              .section {
-                margin-bottom: 40px;
-              }
-              .contact a {
-                color: #2980b9;
-                text-decoration: none;
-              }
-              ul {
-                padding-left: 20px;
-              }
-              .job-title {
-                font-weight: bold;
-              }
-              .company {
-                font-style: italic;
-              }
-              .date {
-                color: #777;
-              }
-              .skills span {
-                display: inline-block;
-                background-color: #ecf0f1;
-                padding: 5px 10px;
-                margin: 5px;
-                border-radius: 4px;
-              }
-            
-            </style>
-          </head>
-          <body>
-            <div id="resume-root"></div>
-          </body>
-        </html>
-      `);
-      newWindow.document.close();
-
-      const container = newWindow.document.getElementById("resume-root");
-      if (container) {
-        const root = createRoot(container);
-        root.render(<Resume />);
-      }
-    }
-    closeMenu(); // Close mobile menu after opening resume
+  const downloadResume = () => {
+    const link = document.createElement("a");
+    link.href = resumePdf;
+    link.download = "Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    closeMenu();
   };
 
   const navItems = [
@@ -287,37 +228,39 @@ function Navigation() {
               ))}
 
               <button
-                onClick={openResumeInNewWindow}
+                onClick={downloadResume}
                 title="View Resume"
                 style={{
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
-                  width: "40px",
+                  width: "70px",
                   height: "40px",
-                  borderRadius: "50%",
-                  backgroundColor: "#007bff",
-                  color: "white",
+                  borderRadius: "15%",
+                  backgroundColor: "whitesmoke",
+                  color: "rgb(236, 88, 0)",
                   border: "none",
                   fontSize: "16px",
                   cursor: "pointer",
                   transition: "all 0.3s ease",
-                  boxShadow: "0 2px 10px rgba(0, 123, 255, 0.3)",
+                  // boxShadow: "0 2px 10px rgba(0, 123, 255, 0.3)",
                 }}
                 onMouseEnter={(e) => {
-                  e.target.style.backgroundColor = "#0056b3";
+                  e.target.style.color = "white";
+                  e.target.style.backgroundColor = "rgb(236, 88, 0)";
                   e.target.style.transform = "translateY(-3px)";
-                  e.target.style.boxShadow =
-                    "0 4px 15px rgba(0, 123, 255, 0.4)";
+                  // e.target.style.boxShadow =
+                  //   "0 4px 15px rgba(0, 123, 255, 0.4)";
                 }}
                 onMouseLeave={(e) => {
-                  e.target.style.backgroundColor = "#007bff";
+                  e.target.style.color = "rgb(236, 88, 0)";
+                  e.target.style.backgroundColor = "whitesmoke";
                   e.target.style.transform = "translateY(0)";
-                  e.target.style.boxShadow =
-                    "0 2px 10px rgba(0, 123, 255, 0.3)";
+                  // e.target.style.boxShadow =
+                  //   "0 2px 10px rgba(0, 123, 255, 0.3)";
                 }}
               >
-                <i className="fas fa-file-pdf"></i>
+                Resume
               </button>
             </div>
 
@@ -481,7 +424,7 @@ function Navigation() {
               ))}
 
               <button
-                onClick={openResumeInNewWindow}
+                onClick={downloadResume}
                 title="View Resume"
                 style={{
                   display: "flex",

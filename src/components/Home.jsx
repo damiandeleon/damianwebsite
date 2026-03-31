@@ -33,7 +33,7 @@ function Home() {
               }}
             >
               <div>
-                <h2>Hi! I'm Damian Deleon. 👋🏼</h2>
+                <h2>Hi! I'm Damian DeLeon. 👋🏼</h2>
                 <p style={{ color: "#696969" }} className="subtitle">
                   Multi disciplinary{" "}
                   <span style={{ color: "rgb(236,88,0)" }}>developer </span>{" "}
