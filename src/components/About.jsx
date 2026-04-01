@@ -59,13 +59,8 @@ function About() {
                 <div>
                   <img
                     src={profile}
-                    style={{
-                      maxWidth: "18.0rem",
-                      borderRadius: "15%",
-                      marginTop: "20px",
-                      marginLeft: "50px",
-                    }}
-                    alt="down arrow"
+                    className="about-profile-img"
+                    alt="developer profile picture"
                   />
                 </div>
               </div>

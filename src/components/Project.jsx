@@ -23,6 +23,10 @@ const Project = (props) => {
           >
             <h2>My Work</h2>
             <p>Hover over any project to learn more!</p>
+            <p style={{ color: "#696969", fontFamily: "karla" }}>
+              Currently I am working on new projects to demonstrate what I've
+              learned over the years. Be on the lookout for the upcoming MVPs!
+            </p>
           </div>
         </div>
 

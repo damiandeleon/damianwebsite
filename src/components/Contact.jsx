@@ -23,11 +23,12 @@ const Contact = () => {
             <h2>
               Let's Connect!{" "}
               <span>
-                <i class="fa-solid fa-comment-dots"></i>
+                <i className="fa-solid fa-comment-dots"></i>
               </span>
             </h2>
 
             <div
+              className="contact-layout"
               style={{
                 display: "flex",
                 alignItems: "flex-start",
@@ -38,13 +39,14 @@ const Contact = () => {
                 color: "#696969",
               }}
             >
-              <p>
+              <p className="contact-copy">
                 If you'd like to know more about me or set up a meeting, feel
                 free to find me on my linked in profile, at the top of the page,
                 or you can send me a message here!
               </p>
 
               <form
+                className="contact-form"
                 style={{
                   display: "block",
                   backgroundColor: "rgba(255, 255, 255, 0.95)",

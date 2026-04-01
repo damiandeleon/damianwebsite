@@ -61,55 +61,55 @@ const ProjectList = () => {
     //   description:
     //     "A user with no imagination may need help with planning a vacation.  Vacation Planner does that.  The app presents the user with choices of vacation destinations.  Based on what destination is selected, the vacation planner will display the weather in that vacation spot as well as some interesting places to eat.  This is accomplished through API calls.",
     // },
-    {
-      id: 4,
-      name: "Day Planner Application",
-      img: projectDP,
-      techStack: [
-        "HTML",
-        "CSS",
-        "Javascript",
-        "JQuery",
-        "MomentJS",
-        "local storage",
-      ],
-      gitHubURL: "https://github.com/damiandeleon/work-day-scheduler",
-      gitHubTitle: "GitHub Repository",
-      deployURL: "https://damiandeleon.github.io/work-day-scheduler/",
-      deployTitle: "Deployed Project",
-      description:
-        "This app is used to plan daily activities.  100% front end using local storage to save information until it is manually deleted.  Using Javascript, the app wil shade events based on it's chronological relationship to the current time.",
-    },
-    {
-      id: 5,
-      name: "Password Generator Application",
-      img: projectPG,
-      techStack: ["HTML", "CSS", "Javascript"],
-      gitHubURL: "https://github.com/damiandeleon/Password-Generator",
-      gitHubTitle: "GitHub Repository",
-      deployURL: "https://damiandeleon.github.io/Password-Generator/",
-      deployTitle: "Deployed Project",
-      description:
-        "One of my first assignments in coding bootcamp to practice Javascript.  The password generator creates a random password for a user based on the preferences taken from the user.",
-    },
-    {
-      id: 6,
-      name: "Weather Dashboard",
-      img: projectWD,
-      techStack: [
-        "HTML",
-        "CSS",
-        "Javascript",
-        "local storage",
-        "Open Weather API",
-      ],
-      gitHubURL: "https://github.com/damiandeleon/Weather-Dashboard/",
-      gitHubTitle: "GitHub Repository",
-      deployURL: "https://damiandeleon.github.io/Weather-Dashboard/",
-      deployTitle: "Deployed Project",
-      description:
-        "This tool is used to pull the local forecast plus a five-day forecast by city for a user. It derives the data from the Open Weather API site. All searches are saved to the web browser's local storage, and if not cleared, then can be accessed again when the page is revisited.",
-    },
+    // {
+    //   id: 4,
+    //   name: "Day Planner Application",
+    //   img: projectDP,
+    //   techStack: [
+    //     "HTML",
+    //     "CSS",
+    //     "Javascript",
+    //     "JQuery",
+    //     "MomentJS",
+    //     "local storage",
+    //   ],
+    //   gitHubURL: "https://github.com/damiandeleon/work-day-scheduler",
+    //   gitHubTitle: "GitHub Repository",
+    //   deployURL: "https://damiandeleon.github.io/work-day-scheduler/",
+    //   deployTitle: "Deployed Project",
+    //   description:
+    //     "This app is used to plan daily activities.  100% front end using local storage to save information until it is manually deleted.  Using Javascript, the app wil shade events based on it's chronological relationship to the current time.",
+    // },
+    // {
+    //   id: 5,
+    //   name: "Password Generator Application",
+    //   img: projectPG,
+    //   techStack: ["HTML", "CSS", "Javascript"],
+    //   gitHubURL: "https://github.com/damiandeleon/Password-Generator",
+    //   gitHubTitle: "GitHub Repository",
+    //   deployURL: "https://damiandeleon.github.io/Password-Generator/",
+    //   deployTitle: "Deployed Project",
+    //   description:
+    //     "One of my first assignments in coding bootcamp to practice Javascript.  The password generator creates a random password for a user based on the preferences taken from the user.",
+    // },
+    // {
+    //   id: 6,
+    //   name: "Weather Dashboard",
+    //   img: projectWD,
+    //   techStack: [
+    //     "HTML",
+    //     "CSS",
+    //     "Javascript",
+    //     "local storage",
+    //     "Open Weather API",
+    //   ],
+    //   gitHubURL: "https://github.com/damiandeleon/Weather-Dashboard/",
+    //   gitHubTitle: "GitHub Repository",
+    //   deployURL: "https://damiandeleon.github.io/Weather-Dashboard/",
+    //   deployTitle: "Deployed Project",
+    //   description:
+    //     "This tool is used to pull the local forecast plus a five-day forecast by city for a user. It derives the data from the Open Weather API site. All searches are saved to the web browser's local storage, and if not cleared, then can be accessed again when the page is revisited.",
+    // },
   ];
   return <Project projectDetails={projectDetails} />;
 };
