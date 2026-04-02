@@ -430,19 +430,19 @@ function Navigation() {
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
-                  width: "50px",
-                  height: "50px",
-                  borderRadius: "50%",
-                  backgroundColor: "#007bff",
+                  width: "70px",
+                  height: "40px",
+                  borderRadius: "15%",
+                  backgroundColor: "rgb(236, 88, 0)",
                   color: "white",
                   border: "none",
-                  fontSize: "18px",
+                  fontSize: "16px",
                   cursor: "pointer",
                   transition: "all 0.3s ease",
                   boxShadow: "0 2px 10px rgba(0, 123, 255, 0.3)",
                 }}
               >
-                <i className="fas fa-file-pdf"></i>
+                Resume
               </button>
             </div>
           </div>
