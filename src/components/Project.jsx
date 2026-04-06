@@ -81,7 +81,7 @@ const Project = (props) => {
                               target="_blank"
                               rel="noreferrer"
                             >
-                              <i className="fa fa-github fa-2x card-btn" />
+                              <i className={project.deploytool} />
                             </a>
                           </div>
                         </div>

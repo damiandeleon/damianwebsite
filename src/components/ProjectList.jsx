@@ -5,7 +5,7 @@ import projectPG from "../Assets/Images/passwordGeneratorApp.png";
 import projectWD from "../Assets/Images/weatherDashboard.png";
 // import projectMM from "../Assets/Images/mindManagedApp.png";
 import projectMM from "../Assets/Images/tabbyBlink.gif";
-import projectFR from "../Assets/Images/frienemies.png";
+import projectST from "../Assets/Images/delta-metal.png";
 import Project from "./Project";
 
 const ProjectList = () => {
@@ -35,20 +35,21 @@ const ProjectList = () => {
       deployTitle: "Deployed Project",
       description:
         "Mental Health / mood monitoring app.  Using Axios to perform CRUD operations, so user can journal and track medications.  The app also uses the openFDA API to search for medications. ",
+      deploytool: "fa fa-github fa-2x card-btn",
     },
-    // {
-    //   id: 2,
-    //   name: "Frienemies App",
-    //   img: projectFR,
-    //   techStack:
-    //     "HTML, CSS3, Bootstrap, HTML, Handlebars, Javascript, NPM Packages: Cloudinary, MySQL2, sequelize, bcrypt",
-    //   gitHubURL: "https://github.com/damiandeleon/project-2-group-3",
-    //   gitHubTitle: "GitHub Repository",
-    //   deployURL: "https://damp-thicket-88352.herokuapp.com/login",
-    //   deployTitle: "Deployed Project",
-    //   description:
-    //     "Frenemies connects people with nothing in common, giving them a chance to learn new things from each other. NPM packages used: Cloudinary (for uploading images), MySQL for saving user info, friends list, and user interests",
-    // },
+    {
+      id: 2,
+      name: "Star Trek Character Search",
+      img: projectST,
+      techStack: "NextJS, Tailwind, Typescript, Python, SQLite3",
+      gitHubURL: "https://gitlab.com/damianmdeleon/startreksearch",
+      gitHubTitle: "GitLab Repository",
+      deployURL: "https://startreksearch-eae7ce.gitlab.io/",
+      deployTitle: "Deployed Project",
+      description:
+        "Tool to search for Star Trek characters by name, built with Next.js and static JSON data. Powered by data from STAPI, a Star Trek API.",
+      deploytool: "fa fa-gitlab fa-2x card-btn",
+    },
     // {
     //   id: 3,
     //   name: "Vacation Planner Application",
