@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import resumePdf from "../assets/Resume.pdf";
+import resumePdf from "../assets/DamianResume2026.pdf";
 
 function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
